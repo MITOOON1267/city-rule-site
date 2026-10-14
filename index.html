@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="街で暮らすすべての市民のためのルールガイド">
+  <title>街のルール | CITY RULES</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#home">CITY<span>RULES</span></a>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#rules">RULES</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">YOUR STORY BEGINS HERE</p>
+      <h1>この街で、<br><span>自分だけの物語を。</span></h1>
+      <p class="intro">
+        この街で暮らすすべての市民へ。<br>
+        みんなが楽しく過ごすためのルールガイド。
+      </p>
+      <a class="main-button" href="#rules">街のルールを確認する ↗</a>
+    </section>
+
+    <section class="rules" id="rules">
+      <p class="eyebrow">CITY GUIDELINES</p>
+      <h2>街のルール</h2>
+      <p class="section-description">
+        確認したいルールを選択してください。
+      </p>
+
+      <label class="search-label" for="ruleSearch">ルールを検索</label>
+      <input
+        id="ruleSearch"
+        class="search-input"
+        type="search"
+        placeholder="例：犯罪、警察、禁止事項..."
+        autocomplete="off"
+      >
+      <p id="searchStatus" class="search-status" aria-live="polite"></p>
+
+      <div class="rule-grid" id="ruleGrid">
+
+        <a class="rule-card" href="#basic"
+           data-search="基本ルール 市民 RP ロールプレイ">
+          <span class="number">01</span>
+          <h3>基本ルール</h3>
+          <p>街で生活するうえでの基本事項</p>
+          <span class="arrow">↗</span>
+        </a><a class="rule-card" href="#crime"
+           data-search="犯罪 強盗 警察 クールタイム">
+          <span class="number">02</span>
+          <h3>犯罪ルール</h3>
+          <p>犯罪行為や対応に関する規定</p>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="rule-card" href="#jobs"
+           data-search="職業 組織 警察 救急隊 ギャング">
+          <span class="number">03</span>
+          <h3>職業・組織ルール</h3>
+          <p>警察・救急隊・ギャングなど</p>
+          <span class="arrow">↗</span>
+        </a>
+
+        <a class="rule-card" href="#manners"
+           data-search="禁止事項 マナー 嫌がらせ チート">
+          <span class="number">04</span>
+          <h3>禁止事項・マナー</h3>
+          <p>全市民が守るべき行動規範</p>
+          <span class="arrow">↗</span>
+        </a>
+
+      </div>
+
+      <p id="noResults" class="no-results" hidden>
+        該当するカテゴリーが見つかりませんでした。
+      </p>
+    </section>
+
+    <section class="rule-details" aria-label="ルール詳細">
+
+      <article id="basic" class="rule-detail">
+        <p class="eyebrow">RULE 01</p>
+        <h2>基本ルール</h2>
+        <p>この街で生活するすべての市民が守る基本ルールです。</p>
+        <ul>
+          <li>ほかの市民のロールプレイを尊重してください。</li>
+          <li>運営が定める規約や指示に従ってください。</li>
+          <li>不具合やバグを意図的に悪用しないでください。</li>
+          <li>相手が不快になる行為や迷惑行為は控えてください。</li>
+        </ul>
+        <a class="back-link" href="#rules">↑ カテゴリー一覧へ戻る</a>
+      </article>
+
+      <article id="crime" class="rule-detail">
+        <p class="eyebrow">RULE 02</p>
+        <h2>犯罪ルール</h2>
+        <p>犯罪に関するルールをまとめるカテゴリーです。</p>
+        <ul>
+          <li>犯罪を始める前に、街独自の規定を確認してください。</li>
+          <li>警察やほかの市民とのロールプレイを尊重してください。</li>
+          <li>人数制限やクールタイムなどは、正式な規定に従ってください。</li>
+          <li>不明な点がある場合は、運営に確認してください。</li>
+        </ul>
+        <a class="back-link" href="#rules">↑ カテゴリー一覧へ戻る</a>
+      </article>
+
+      <article id="jobs" class="rule-detail">
+        <p class="eyebrow">RULE 03</p>
+        <h2>職業・組織ルール</h2>
+        <p>警察・救急隊・ギャングなど、各組織の規定をまとめます。</p>
+        <ul>
+          <li>各職業・組織の専用ルールを確認してください。</li>
+          <li>組織の権限や役割を適切に扱ってください。</li>
+          <li>ほかの組織とのロールプレイも尊重してください。</li>
+        </ul>
+        <a class="back-link" href="#rules">↑ カテゴリー一覧へ戻る</a>
+      </article>
+
+      <article id="manners" class="rule-detail">
+        <p class="eyebrow">RULE 04</p>
+        <h2>禁止事項・マナー</h2>
+        <p>すべての市民が安心して楽しむための規定です。</p>
+        <ul>
+          <li>嫌がらせや悪質な迷惑行為をしないでください。</li>
+          <li>チートや不正ツールを使用しないでください。</li>
+          <li>不具合を発見した場合は、運営に報告してください。</li>
+          <li>違反行為への対応は、街の正式な規定に従います。</li>
+        </ul>
+        <a class="back-link" href="#rules">↑ カテゴリー一覧へ戻る</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-logo">CITY RULES</p>
+    <p>ROLEPLAY COMMUNITY</p>
+    <small>※ 掲載内容は制作サンプルです。公開前に正式な街ルールへ変更してください。</small>
+  </footer>
+
+</body>
+</html>
